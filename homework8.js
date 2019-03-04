@@ -24,18 +24,17 @@ function Animal(name) {
 }
 
 function Cat() {
-  
-  Animal.apply(this, arguments);
-  // this.animalFeed = this.feed;
-  this.animalFeed = function(){
-    return this.feed() + ' Кот доволен ^_^';
-  }
+    Animal.apply(this, arguments);
+    var animalFeed = this.feed;
+    this.feed = function () {
+        return animalFeed() + ' Кот доволен ^_^';
+    }
 }
 
 
 var barsik = new Cat('Барсик');
 console.log(barsik.dailyNorm(100));
-console.log(barsik.animalFeed());
+console.log(barsik.feed());
 
 
 // ----------------------№2----------------------
