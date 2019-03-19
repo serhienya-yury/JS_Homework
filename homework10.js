@@ -1,7 +1,7 @@
 // ----------------------------1-------------------------
 function isPalindrome (str) {
     var reverseStr = str.split('').reverse().join('').toUpperCase(); 
-    return str.toUpperCase() === reverseStr ? true : false;
+    return str.toUpperCase() == reverseStr;
 }
 
 console.log(isPalindrome('шалаШ'));
@@ -10,7 +10,7 @@ console.log(isPalindrome('привет'));
 // ----------------------------2-------------------------
 
 function isAnagram (strFirst, strSecond) {
-    return strSecond == strFirst.split('').reverse().join('') ? true : false;
+    return strSecond == strFirst.split('').reverse().join('');
 }
 console.log(isAnagram('кот', 'ток'));
 console.log(isAnagram('кот', 'атк'));
