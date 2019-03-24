@@ -1,0 +1,18 @@
+td{
+    border: 1px solid black;
+    width: 200px;
+    padding-left: 10px;
+}
+tr{
+    height: 40px;
+}
+table{
+    border-spacing: 0;
+}
+#addRow{
+    text-align: center;
+    cursor: pointer;
+}
+#divTable input{
+    border: 0 none;
+}
