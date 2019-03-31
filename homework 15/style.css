@@ -1,0 +1,48 @@
+.container{
+    width: 520px;
+    background-color: gray;
+    padding: 10px;
+}
+.container button{
+    margin-left: 390px;
+}
+#container_item{
+    position: relative;
+    height: 240px;
+    display: none;
+}
+#container_item div{
+    padding: 10px;
+    background-color: white;
+    margin-top: 5px;
+    position: relative;
+    width: 500px;
+}
+.links{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: -33px;
+    background-color: rgb(41, 175, 47);
+    padding: 5px 30px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+#container_item div:nth-of-type(2) > a{
+    left: 130px;
+}
+#container_item div:nth-of-type(3) > a{
+    left: 250px;
+}
+#container_item div:nth-of-type(n){
+    position: absolute;
+}
+#container_item div:nth-of-type(1){
+    z-index: 1;
+}
+.addZindex{
+    z-index: 2;
+     
+}
+
+
